@@ -123,7 +123,7 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 For questions or inquiries, reach out to me at:
 
-- **Email**: [himansh007parashar@gmail.com]
+- **Email**: [himanshu007parashar@gmail.com]
 - **GitHub**: [https://github.com/himanshuParashar0101](https://github.com/himanshuParashar0101)
 
 
