@@ -1,6 +1,6 @@
 # CRUD Operations with Node.js and Express.js
 
-This project demonstrates a simple CRUD (Create, Read, Update, Delete) application using Node.js, Express.js, PostgreSQL, and Faker.js for generating random user data.
+This project demonstrates a simple CRUD (Create, Read, Update, Delete) application using Node.js, Express.js, mysql, and Faker.js for generating random user data.
 
 ## Table of Contents
 
@@ -20,10 +20,6 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) applicati
 - `index.js`            # Entry point for the application
 - `/views`              # EJS templates for rendering HTML
 - `/public`             # Static files (CSS, JS, images)
-- `/routes`             # Express routes for handling CRUD operations
-- `/controllers`        # Controller functions for handling business logic
-- `/models`             # Database models and queries
-- `/middlewares`        # Custom middleware for request validation, etc.
 
 ## Features
 
