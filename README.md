@@ -4,14 +4,26 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) applicati
 
 ## Table of Contents
 
+- [Project Structure](#Project-Stucture)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
+- [API Overview](#api-Overview)
 - [License](#license)
 - [Contributing](#contributing)
 - [Contact](#contact)
+
+
+## Project Structure
+
+- `index.js`            # Entry point for the application
+- `/views`              # EJS templates for rendering HTML
+- `/public`             # Static files (CSS, JS, images)
+- `/routes`             # Express routes for handling CRUD operations
+- `/controllers`        # Controller functions for handling business logic
+- `/models`             # Database models and queries
+- `/middlewares`        # Custom middleware for request validation, etc.
 
 ## Features
 
@@ -29,7 +41,8 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) applicati
 - Mysql
 - Faker.js
 - UUID
-
+- EJS
+  
 ## Installation
 
 1. Clone the repository:
@@ -45,10 +58,11 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) applicati
 
    ```bash
    npm index.js
+   OR
    
    nodemon index.js
    
-# API Endpoints
+# API Overview
 
 ### Usage
 Once the application is running, you can interact with the API using tools like Postman or cURL.
@@ -62,6 +76,55 @@ Once the application is running, you can interact with the API using tools like 
 | PATCH      | `/users/:id`    | Update a user by ID              |
 | DELETE     | `/users/:id`    | Delete a user by ID              |
 
+## Database Schema
+
+The `users` table has the following structure:
+
+| **Field**   | **Type**        | **Description**               |
+|-------------|-----------------|-------------------------------|
+| `id`        | `UUID`          | Unique identifier for each user|
+| `username`  | `VARCHAR(255)`  | Username of the user           |
+| `email`     | `VARCHAR(255)`  | Email address of the user      |
+| `password`  | `VARCHAR(255)`  | Password of the user (hashed)  |
+
+
+## Environment Variables
+
+Make sure to set up the following environment variables in a `.env` OR index.js  file:
+
+| **Variable**    | **Description**                    |
+|-----------------|------------------------------------|
+| `DB_HOST`       | The database host                  |
+| `DB_USER`       | The database user                  |
+| `DB_PASSWORD`   | The database password              |
+| `DB_NAME`       | The database name                  |
+| `PORT`          | The port on which the app runs     |
+
+## Security
+
+- **SQL Injection Prevention**: All database queries use parameterized queries to avoid SQL injection.
+- **Password Storage**: User passwords are stored securely using hashing.
+
+## Future Improvements
+
+- Add user authentication and JWT-based session management.
+- Implement pagination and sorting for user data.
+- Add input validation using libraries like `express-validator`.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue.
+
+## Contact
+
+For questions or inquiries, reach out to me at:
+
+- **Email**: [himansh007parashar@gmail.com]
+- **GitHub**: [https://github.com/himanshuParashar0101](https://github.com/himanshuParashar0101)
 
 
 
