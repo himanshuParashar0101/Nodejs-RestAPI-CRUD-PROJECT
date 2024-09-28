@@ -38,4 +38,4 @@ This project demonstrates a simple CRUD (Create, Read, Update, Delete) applicati
    https://github.com/himanshuParashar0101/Nodejs-RestAPI-CRUD-PROJECT.git
 2. Install dependencies:
    ```bash
-npm install
+   npm install
